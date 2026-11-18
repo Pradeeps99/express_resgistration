@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+</head>
+<body>
+
+    <h2>User Registration Form</h2>
+
+    <form action="/user_reg_submit" method="POST">
+
+        First Name:
+        <input type="text" name="fname" required>
+        <br><br>
+
+        Middle Name:
+        <input type="text" name="mname">
+        <br><br>
+
+        Last Name:
+        <input type="text" name="lname" required>
+        <br><br>
+
+        Gender:
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
+
+        Date of Birth:
+        <input type="date" name="dob" required>
+        <br><br>
+
+        Email:
+        <input type="email" name="email" required>
+        <br><br>
+
+        Password:
+        <input type="password" name="password" required>
+        <br><br>
+
+        Security Question:
+        <select name="question" required>
+            <option value="">Select Question</option>
+            <option>What is your favourite colour?</option>
+            <option>What is your birthplace?</option>
+            <option>What is your favourite food?</option>
+        </select>
+        <br><br>
+
+        Security Answer:
+        <input type="text" name="answer" required>
+        <br><br>
+
+        Hobbies (comma separated):
+        <input type="text" name="hobbies"
+        placeholder="Reading, Music, Gaming">
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
